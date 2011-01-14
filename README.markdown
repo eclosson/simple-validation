@@ -3,11 +3,11 @@ Simple JQuery Validation
 
 Add data-validate with the validation function you want to run
 
-<input id="name" type="textbox" data-validate="required" />
+`<input id="name" type="textbox" data-validate="required" />`
 
 Add data-validate with multiple validation functions separated by a ' '
 
-<input id="email" type="textbox" data-validate="required email" />
+`<input id="email" type="textbox" data-validate="required email" />`
 
 Create a location for error messages to appear
 
