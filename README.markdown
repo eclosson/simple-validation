@@ -19,21 +19,21 @@ Include a 'validate' class on the form you want to validate
 
 Wire up the forms you want to validate
 
-`$(document).ready(function () {
-	$("form.validate").validate('#errors');
-});`
+		$(document).ready(function () {
+			$("form.validate").validate('#errors');
+		});
 
 Extend with your own validation functions and messages if you want
 
-`var validation_functions = {
-	check: function(element)
-	{
-		return jQuery.trim(element.value) == "the dude";
-	}
-};
+		var validation_functions = {
+			check: function(element)
+			{
+				return jQuery.trim(element.value) == "the dude";
+			}
+		};
 
-var validation_messages = {
-	check: "does not match."
-};
+		var validation_messages = {
+			check: "does not match."
+		};
 
-simple_validation.extend(validation_functions, validation_messages);`
+		simple_validation.extend(validation_functions, validation_messages);
