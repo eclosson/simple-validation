@@ -19,9 +19,9 @@ Include a 'validate' class on the form you want to validate
 
 Wire up the forms you want to validate
 
-$(document).ready(function () {
+`$(document).ready(function () {
 	$("form.validate").validate('#errors');
-});
+});`
 
 Extend with your own validation functions and messages if you want
 
