@@ -88,7 +88,8 @@ var simple_validation = {
 		email: "must be an email address.",
 		zip: "must be a valid ZIP or ZIP + 4 code.",
 		digits: "must contain only numeric characters.",
-		url: ""
+		url: "",
+		isbn13: "must be a valid isbn13"
 	},
 	
 	functions: 
@@ -116,6 +117,10 @@ var simple_validation = {
 		digits: function(element)
 		{
 			return simple_validation.validate_regex(element.value, /^\d+$/);
+		},
+		isbn13: function(element)
+		{
+		  return simple_validation.validate_regex(element.value, /^\d{13}$/);
 		}
 	},
 	
